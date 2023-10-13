@@ -11,17 +11,17 @@ function layout({ children }: { children: React.ReactNode }) {
     return (
         <>
             <div className='bg-white flex h-screen overflow-hidden bg-gray-200'>
-                <div className='w-[170p] w-[65px] shrink-0 bg-gray-700 dark:bg-gray-800 h-full'>
+                <div className='w-[170px] w-[65p] shrink-0 bg-gray-700 dark:bg-gray-800 h-full'>
 
                 </div>
-                <div className="h-[100vh] w-full overflow-hidden bg-gray-100 p-2">
+                <div className="h-[100vh] w-full overflow-hidden bg-gray-100 ">
                     <div className='h-[60px] bg-white'>
 
                     </div>
                     <div className='bg-black h-[calc(100%-60px)]'>
 
                     </div>
-                    
+
                 </div>
             </div>
         </>
