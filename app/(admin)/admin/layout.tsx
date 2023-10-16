@@ -1,13 +1,8 @@
-'use client'
-import Count from '@/components/Count'
-import React, { useState } from 'react'
+import React from 'react'
 
 
 function layout({ children }: { children: React.ReactNode }) {
 
-    const [settings, setSettings] = useState({
-        mode: "dark"
-    })
 
     return (
         <>
@@ -19,16 +14,9 @@ function layout({ children }: { children: React.ReactNode }) {
                     <div className='h-[60px] bg-white border-b'>
 
                     </div>
-                    <div className='max-w-screen-lg mx-auto h-[calc(100%-60px)] px-2'>
+                    <div className='max-w-screen-lg mx-auto px-2  h-[calc()] bg-blue-600 '>
 
-                        <div className='grid gap-3 lg:grid-cols-4 grid-cols-2 my-3 '>
-
-                            <Count />
-                            <Count />
-                            <Count />
-                            <Count />
-
-                        </div>
+                        {children}
 
                     </div>
 

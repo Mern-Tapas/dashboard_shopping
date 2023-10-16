@@ -1,9 +1,19 @@
+'use client'
 import React from 'react'
+import Count from '@/components/Count'
 
-function page() {
+function Page() {
   return (
-    <div>page</div>
+    <div className='grid gap-3 lg:grid-cols-4 grid-cols-2 my-3 '>
+
+      <Count />
+      <Count />
+      <Count />
+      <Count />
+
+    </div>
+
   )
 }
 
-export default page
+export default Page
