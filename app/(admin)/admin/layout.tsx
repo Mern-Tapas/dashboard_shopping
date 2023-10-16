@@ -14,7 +14,7 @@ function layout({ children }: { children: React.ReactNode }) {
                     <div className='h-[60px] bg-white border-b'>
 
                     </div>
-                    <div className='max-w-screen-lg mx-auto px-2  h-[calc()] bg-blue-600 '>
+                    <div className='max-w-screen-lg mx-auto px-2 '>
 
                         {children}
 
