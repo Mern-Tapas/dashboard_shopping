@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Container from '@/layouts/Container'
 import { usePathname } from 'next/navigation'
 
+
 function Header() {
 
     const pathname: string = usePathname()
