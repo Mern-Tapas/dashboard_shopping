@@ -13,6 +13,10 @@ function Page() {
         <Count />
 
       </div>
+
+      <div className="mt-4 bg-white h-[600px] rounded-xl md:rounded-2xl">
+
+      </div>
     </>
 
   )

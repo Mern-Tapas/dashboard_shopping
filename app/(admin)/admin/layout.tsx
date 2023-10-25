@@ -11,10 +11,10 @@ function layout({ children }: { children: React.ReactNode }) {
 
                 </div>
                 <div className="h-[100vh] w-full overflow-y-scroll">
-                    <div className='h-[60px] bg-white border-b'>
+                    <div className='h-[60px] bg-white border-b w-full sticky top-0'>
 
                     </div>
-                    <div className='max-w-screen-lg mx-auto px-2 '>
+                    <div className='max-w-screen-xl contanier mx-auto px-2 '>
 
                         {children}
 
