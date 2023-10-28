@@ -20,7 +20,7 @@ function Header() {
         { link: "home", path: "/" },
         { link: "product", path: "/products" },
         { link: "about", path: "/about" },
-        { link: "contact", path: "/contacts" },
+        { link: "contact", path: "/contact" },
         { link: "admin", path: "/admin" },
     ]
 
