@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation'
 
 function Header() {
 
-    const pathname: string = usePathname()
+    const pathname = usePathname()
 
     const [windowsPosition, setWinPosition] = useState<number>(0)
 
