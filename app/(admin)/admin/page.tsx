@@ -14,7 +14,7 @@ function Page() {
 
       </div>
 
-      <div className="mt-4 bg-white h-[600px] rounded-xl md:rounded-2xl">
+      <div className="mt-4 bg-white h-[600px] rounded-lg">
 
       </div>
     </>

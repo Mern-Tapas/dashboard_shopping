@@ -4,7 +4,7 @@ import Box from '@/public/stock/icons/box.svg'
 
 function Count() {
     return (
-        <div className='bg-white flex  borde  rounded-xl md:rounded-2xl p-4 md:p-6'>
+        <div className='bg-white flex  borde  rounded-lg p-4 md:p-6'>
             <div className='my-auto '>
                 <h1 className='text-lg sm:text-2xl font-bold'>$ 256</h1>
                 <h1 className='mt-1 text-[12px] sm:text-sm text-gray-500'>Total Sales</h1>
