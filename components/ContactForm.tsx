@@ -1,15 +1,27 @@
 'use client'
+import { Input } from '@chakra-ui/react'
 import axios from 'axios'
 import React, { useState } from 'react'
+
+
+
 function ContactForm() {
 
+    interface Message {
+        name: string;
+        email: string;
+        massage: string;
+    }
 
-    const [messages, setMessages] = useState(null)
+    const [messages, setMessages] = useState<Message>({
+        name: '',
+        email: '',
+        massage: '',
+    })
 
 
     const inputhandler = (e) => {
         const { name, value } = e.target
-        console.log(`${name}+${value}`)
 
         setMessages((pre) => {
             return { ...pre, [name]: value }
@@ -26,7 +38,14 @@ function ContactForm() {
             <div className="p-2 w-1/2">
                 <div className="relative">
                     <label className="leading-7 text-sm text-gray-600">Name</label>
-                    <input type="text" onChange={inputhandler} id="name" name="name" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                    <Input
+                        type='text'
+                        name='name'
+                        errorBorderColor='red.30'
+                        value={messages.name}
+                        onChange={inputhandler}
+                    />
+                    <input type="text" id="name" name="name" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                 </div>
             </div>
             <div className="p-2 w-1/2">
