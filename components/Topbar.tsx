@@ -15,7 +15,7 @@ function Topbar({ sidebarButton, isOpen }: { sidebarButton: React.Dispatch<React
                 <Menu >
                     <MenuButton>
                         <WrapItem >
-                            <Avatar name='Dan Abrahmov' size='md' src='https://bit.ly/dan-abramov' />
+                            <Avatar name='Dan Abrahmov' size='sm' src='https://bit.ly/dan-abramov' />
                         </WrapItem>
                     </MenuButton>
                     <MenuList>
