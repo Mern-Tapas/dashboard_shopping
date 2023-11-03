@@ -14,11 +14,11 @@ function Layout({ children }: { children: React.ReactNode }) {
     return (
         <>
             <ChakraProvider>
-                <div className='bg-gray-100 flex h-screen overflow-hidden '>
+                <div className='bg-white flex h-screen overflow-hidden '>
                     <Sidebar isOpen={isOpen} />
                     <div className="h-[100vh] w-full overflow-y-scroll">
                         <Topbar isOpen={isOpen} sidebarButton={setOpen} />
-                        <div className='max-w-screen-lg 2xl:max-w-screen-xl contanier mx-auto px-4'>
+                        <div className='max-w-screen-lg 2xl:max-w-screen-xl contanier mx-auto px-4 '>
 
                             {children}
 

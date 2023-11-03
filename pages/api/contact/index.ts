@@ -1,9 +1,28 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
 
-export default async function handler(req: NextRequest, res: NextResponse) {
+export type responseData = {
+    status: boolean,
+    message: string,
+    content: string[],
 
-    console.log(req.body)
-
-    // return res.json({ massage: "working" })
-    return NextResponse.json({massage:"working"})
 }
+
+const handler = async (req: NextApiRequest, res: NextApiResponse<responseData>) => {
+    const value = { message: "greeting" }
+
+    res.json({ status: false, message: "mail send successfully", content: ["done", "done"] })
+
+
+    if (req.method == "POST") {
+
+        const { email } = req.body
+        console.log(email)
+    }
+
+
+
+}
+
+
+export default handler

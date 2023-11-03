@@ -12,7 +12,7 @@ function layout({ children }: { children: React.ReactNode }) {
 
     return (
         <>
-            <ChakraProvider>
+            <ChakraProvider toastOptions={{ defaultOptions: { position: 'bottom' } }}>
                 <div className='min-h-[100vh] flex flex-col'>
 
                     <Header />

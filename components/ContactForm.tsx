@@ -2,10 +2,13 @@
 import { Button, Input, Textarea } from '@chakra-ui/react'
 import axios from 'axios'
 import React, { useState } from 'react'
+import { useToast } from '@chakra-ui/react'
 
 
 
 function ContactForm() {
+
+    const toast = useToast()
 
     interface Message {
         name: string;
@@ -22,7 +25,7 @@ function ContactForm() {
     })
 
 
-    const inputhandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputhandler = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         // const { name, value } = e.target
         setMessages((pre) => {
             return { ...pre, [e.target.name]: e.target.value }
@@ -37,6 +40,15 @@ function ContactForm() {
             if (response) {
                 console.log(response)
                 setLoading(false)
+                toast({
+                    title: 'Account created.',
+                    description: response.data.message,
+                    status: 'error',
+                    duration: 4000,
+                    isClosable: true,
+                    position: 'top'
+                })
+
             }
 
         }).catch((error) => {
@@ -79,7 +91,7 @@ function ContactForm() {
                 <div className="relative">
                     <label className="leading-7 text-sm text-gray-600">Message</label>
                     {/* <textarea name="message" onChange={inputhandler} className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea> */}
-                    <Textarea name='message' value={messages.message} rows={8} onChange={inputhandler} />
+                    <Textarea name='message' value={messages.message} onChange={inputhandler} />
                 </div>
             </div>
             <div className="p-2 w-full flex">

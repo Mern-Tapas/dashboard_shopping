@@ -2,14 +2,18 @@ import React from 'react'
 import { WrapItem, Avatar } from '@chakra-ui/react'
 import { Menu, MenuButton, MenuList, MenuItem, MenuGroup, MenuDivider } from '@chakra-ui/react'
 import Link from 'next/link'
+import ThemeChanger from './ThemeChanger'
 
 
 function Topbar({ sidebarButton, isOpen }: { sidebarButton: React.Dispatch<React.SetStateAction<boolean>>, isOpen: boolean }) {
     return (
-        <div className='h-[60px] bg-white w-full sticky top-0 flex justify-between px-4'>
+        <div className='h-[60px] dark:bg-gray-950 light:bg-white w-full sticky top-0 flex justify-between px-4  border-b'>
 
-            <div className=" border flex items-center">
+            <div className="flex items-center">
                 <button className='' onClick={() => { sidebarButton(!isOpen) }} >open</button>
+            </div>
+            <div>
+                <ThemeChanger />
             </div>
             <div className="flex items-center">
                 <Menu >
