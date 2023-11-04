@@ -14,7 +14,7 @@ function Page() {
 
       </div>
 
-      <div className="mt-4 bg-white h-[600px] rounded-lg">
+      <div className="mt-4 bg-white dark:bg-gray-900 h-[600px] rounded-lg">
 
       </div>
     </>

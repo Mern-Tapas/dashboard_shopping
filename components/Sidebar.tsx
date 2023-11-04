@@ -6,8 +6,8 @@ interface Props {
 
 function Sidebar({ isOpen }: Props) {
     return (
-        <div className={`${isOpen ? "w-[70px]" : "w-[198px]"} border-r hidden transition-all xl:block  light:bg-white shrink-0  dark:bg-gray-800 h-full`}>
-
+        <div className={`${isOpen ? "w-[70px]" : "w-[198px]"} border-r hidden transition-all xl:block  bg-white shrink-0  dark:bg-gray-900 h-full`}>
+<h1>sidebar</h1>
         </div>
     )
 }

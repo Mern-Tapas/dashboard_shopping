@@ -7,7 +7,7 @@ import ThemeChanger from './ThemeChanger'
 
 function Topbar({ sidebarButton, isOpen }: { sidebarButton: React.Dispatch<React.SetStateAction<boolean>>, isOpen: boolean }) {
     return (
-        <div className='h-[60px] dark:bg-gray-950 light:bg-white w-full sticky top-0 flex justify-between px-4  border-b'>
+        <div className='h-[60px] bg-white dark:bg-gray-900 dark:text-white w-full sticky top-0 flex justify-between px-4  border-b'>
 
             <div className="flex items-center">
                 <button className='' onClick={() => { sidebarButton(!isOpen) }} >open</button>
@@ -15,7 +15,7 @@ function Topbar({ sidebarButton, isOpen }: { sidebarButton: React.Dispatch<React
             <div>
                 <ThemeChanger />
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center dark:bg-dark-900">
                 <Menu >
                     <MenuButton>
                         <WrapItem >
