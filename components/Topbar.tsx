@@ -7,7 +7,7 @@ import ThemeChanger from './ThemeChanger'
 
 function Topbar({ sidebarButton, isOpen }: { sidebarButton: React.Dispatch<React.SetStateAction<boolean>>, isOpen: boolean }) {
     return (
-        <div className='component-Topbar h-[60px] bg-white dark:bg-gray-900 dark:text-white w-full sticky top-0 flex justify-between px-4  border-b border-slate-300 dark:border-slate-600 '>
+        <div className='z-20 component-Topbar h-[60px] bg-white dark:bg-gray-900 dark:text-white w-full sticky top-0 flex justify-between px-4  border-b border-slate-300 dark:border-slate-600 '>
 
             <div className="flex items-center">
                 <button className='' onClick={() => { sidebarButton(!isOpen) }} >open</button>
@@ -22,8 +22,8 @@ function Topbar({ sidebarButton, isOpen }: { sidebarButton: React.Dispatch<React
                             <Avatar name='Dan Abrahmov' size='sm' src='https://bit.ly/dan-abramov' />
                         </WrapItem>
                     </MenuButton>
-                    <MenuList className='dark:bg-gray-900 dark:border-slate-500'>
-                        <MenuGroup className='text-sm dark:text-slate-400' title='Profile'>
+                    <MenuList className='dark:bg-gray-900 dark:border-slate-500 '>
+                        <MenuGroup className='text-sm dark:text-slate-400 ' title='Profile'>
                             <Link className='dark:bg-gray-900' href="d">
                                 <MenuItem className='text-sm dark:bg-gray-900 dark:hover:bg-gray-500'>My Account</MenuItem>
                             </Link>
