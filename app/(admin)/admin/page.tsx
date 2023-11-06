@@ -19,11 +19,11 @@ function Page() {
       </div>
 
       <GridLayout className="mt-7" sm="2" md="4" lg="8" xl="12">
-        <ColumnsH scroll={true} className='col-span-4 lg:col-span-5 xl:col-span-8' heading="Recent Order" subHeading="See all recent order here" >
+        <ColumnsH className='col-span-4 lg:col-span-5 xl:col-span-8 flex flex-col' heading="Recent Order" subHeading="See all recent order here" >
 
-          <table className='w-full p-2 text-left text-slate-600 dark:text-slate-300'>
-
+          <table className='w-full p-2 text-left text-slate-600 dark:text-slate-300 h-full'>
             <tbody className='dark:text-slate-400'>
+              <TableRowWithImage />
               <TableRowWithImage />
               <TableRowWithImage />
               <TableRowWithImage />
@@ -32,10 +32,10 @@ function Page() {
             </tbody>
           </table>
 
-          <ColumnPagination className='px-3' />
+          <ColumnPagination className='px-3 mt-auto' />
         </ColumnsH>
 
-        <ColumnsH scroll={false} className='col-span-4 lg:col-span-3 xl:col-span-4' heading="the container" subHeading="Daily Chart Details" >
+        <ColumnsH className='col-span-4 lg:col-span-3 xl:col-span-4' heading="the container" subHeading="Daily Chart Details" >
 
         </ColumnsH>
       </GridLayout>
