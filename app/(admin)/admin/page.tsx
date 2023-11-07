@@ -32,7 +32,7 @@ function Page() {
             </tbody>
           </table>
 
-          <ColumnPagination className='px-3 mt-auto' />
+          <ColumnPagination className='px-3 ' />
         </ColumnsH>
 
         <ColumnsH className='col-span-4 lg:col-span-3 xl:col-span-4' heading="the container" subHeading="Daily Chart Details" >

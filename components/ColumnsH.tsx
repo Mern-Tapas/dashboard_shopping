@@ -13,7 +13,7 @@ export type ColumnsItem = {
 
 function ColumnsH({ children, className, heading, subHeading }: ColumnsItem) {
     return (
-        <div className={`${className} border dark:border-slate-600 rounded-lg dark:bg-gray-900 bg-white border-slate-300 h-[508px] overflow-hidden`}>
+        <div className={`${className} border dark:border-slate-600 rounded-lg dark:bg-gray-900 bg-white border-slate-300 h-[520px] overflow-hidden`}>
             <ColumnHeader subHeading={subHeading} heading={heading} />
             {children}
         </div>
