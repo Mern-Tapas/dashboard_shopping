@@ -1,6 +1,6 @@
 'use client'
 import Topbar from '@/components/Topbar'
-import Sidebar from '@/components/Sidebar'
+import Sidebar from '@/components/dashboard/Sidebar'
 import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'

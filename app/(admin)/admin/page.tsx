@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
-import Count from '@/components/Count'
-import GridLayout from '@/components/GridLayout'
+import Count from '@/components/dashboard/Count'
+import GridLayout from '@/components/dashboard/GridLayout'
 import ColumnsH from '@/components/ColumnsH'
 import { TableContainer, Table, Thead, Tr, Th, Tbody, Td, Tfoot } from '@chakra-ui/react'
 import TableRowWithImage from '@/components/TableRowWithImage'
@@ -39,6 +39,15 @@ function Page() {
 
         </ColumnsH>
       </GridLayout>
+
+      <GridLayout className='mt-7' sm='2' md='4' lg='8' xl='12'>
+        <ColumnsH className='col-span-4 lg:col-span-4 xl:col-span-6' heading='New Users' subHeading='View All New Customers'>
+        </ColumnsH>
+        <ColumnsH className='col-span-4 lg:col-span-4 xl:col-span-6' heading='sdfsdf' subHeading='-asdfadsf adfadf'>
+        </ColumnsH>
+      </GridLayout>
+
+      <br className='mb-7' />
 
     </>
 
