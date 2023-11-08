@@ -3,6 +3,7 @@ import { WrapItem, Avatar } from '@chakra-ui/react'
 import { Menu, MenuButton, MenuList, MenuItem, MenuGroup, MenuDivider } from '@chakra-ui/react'
 import Link from 'next/link'
 import ThemeChanger from './ThemeChanger'
+import MenuSvg from '@/public/stock/icons/menu-1.svg'
 
 
 function Topbar({ sidebarButton, isOpen }: { sidebarButton: React.Dispatch<React.SetStateAction<boolean>>, isOpen: boolean }) {
@@ -10,7 +11,9 @@ function Topbar({ sidebarButton, isOpen }: { sidebarButton: React.Dispatch<React
         <div className='z-20 component-Topbar h-[60px] bg-white dark:bg-gray-900 dark:text-white w-full sticky top-0 flex justify-between px-4  border-b border-slate-300 dark:border-slate-600 '>
 
             <div className="flex items-center">
-                <button className='' onClick={() => { sidebarButton(!isOpen) }} >open</button>
+                <button className='border p-1 rounded border-slate-400  dark:border-slate-600 ' onClick={() => { sidebarButton(!isOpen) }} >
+                    <MenuSvg className="text-slate-400 dark:text-slate-300" />
+                </button>
             </div>
             <div>
                 <ThemeChanger />
