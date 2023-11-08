@@ -12,9 +12,7 @@ export type GridSize = {
 function GridLayout({ sm, md, lg, xl, children, className }: GridSize) {
     return (
         <div className={`grid gap-3 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 xl:grid-cols-12 ${className}`}>
-
             {children}
-
         </div>
     )
 }

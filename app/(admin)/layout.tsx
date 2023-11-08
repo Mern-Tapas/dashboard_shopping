@@ -14,7 +14,7 @@ function Layout({ children }: { children: React.ReactNode }) {
     return (
         <>
             <ChakraProvider>
-                <div className='flex h-screen overflow-hidden bg-gray-100 dark:bg-gray-800'>
+                <div className='flex h-screen overflow-hidden bg-gray-100 dark:bg-black'>
                     <Sidebar isOpen={isOpen} />
                     <div className="h-[100vh] w-full overflow-y-scroll">
                         <Topbar isOpen={isOpen} sidebarButton={setOpen} />
