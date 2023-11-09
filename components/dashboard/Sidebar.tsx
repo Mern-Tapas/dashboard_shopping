@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import SidebarLinks from './SidebarLinks'
 import Home from '@/public/stock/icons/home.svg'
-import Report from '@/public/stock/icons/report.svg'
 import Setting from '@/public/stock/icons/setting.svg'
+import Reports from '@/public/stock/icons/Report.svg'
 
 
 
@@ -22,13 +22,13 @@ function Sidebar({ isOpen }: Props) {
                         <Image className='object-cover ' src={'/stock/images/brand/logo-blue.png'} alt='logo' height={400} width={400} />
                     </div>
                 </div>
-                <div className='w-full border-b border-slate-300 dark:border-slate-600'></div>
+                {/* <div className='w-full border-b border-slate-300 dark:border-slate-600'></div> */}
             </div>
             <div className={`${isOpen ? "px-2" : "px-2"}`}>
-                <SidebarLinks isOpen={isOpen} linkName='Dashboard' path='/admin' className='flex items-center p-2 py-1 hover:bg-slate-50 rounded mb-1' Icon={Home} />
-                <SidebarLinks isOpen={isOpen} linkName='Products' path='/admin' className='flex items-center p-2 py-1 hover:bg-slate-50 rounded mb-1' Icon={Report} />
-                <SidebarLinks isOpen={isOpen} linkName='Reports' path='/admin' className='flex items-center p-2 py-1 hover:bg-slate-50 rounded mb-1' Icon={Setting} />
-                <SidebarLinks isOpen={isOpen} linkName='Reports' path='/admin' className='flex items-center p-2 py-1 hover:bg-slate-50 rounded mb-1' Icon={Setting} />
+                <SidebarLinks isOpen={isOpen} linkName='Dashboard' path='/admin' className='flex items-center p-2 py-1 dark:hover:bg-slate-800 hover:bg-slate-50 rounded mb-1 ' Icon={Home} />
+                <SidebarLinks isOpen={isOpen} linkName='Reports' path='/admin' className='flex items-center p-2 py-1 dark:hover:bg-slate-800 hover:bg-slate-50 rounded mb-1' Icon={Setting} />
+                <SidebarLinks isOpen={isOpen} linkName='Reports' path='/admin' className='flex items-center p-2 py-1 dark:hover:bg-slate-800 hover:bg-slate-50 rounded mb-1' Icon={Setting} />
+                <SidebarLinks isOpen={isOpen} linkName='Reports' path='/admin' className='flex items-center p-2 py-1 dark:hover:bg-slate-800 hover:bg-slate-50 rounded mb-1' Icon={Reports} />
             </div>
         </div>
     )
