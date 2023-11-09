@@ -1,10 +1,17 @@
 import React from 'react'
-import { Divider } from '@chakra-ui/react'
 import Image from 'next/image'
+import SidebarLinks from './SidebarLinks'
+import Home from '@/public/stock/icons/home.svg'
+import Report from '@/public/stock/icons/report.svg'
+import Setting from '@/public/stock/icons/setting.svg'
+
+
 
 interface Props {
     isOpen: boolean
 }
+
+
 
 function Sidebar({ isOpen }: Props) {
     return (
@@ -17,8 +24,11 @@ function Sidebar({ isOpen }: Props) {
                 </div>
                 <div className='w-full border-b border-slate-300 dark:border-slate-600'></div>
             </div>
-            <div className={`${isOpen ? "px-2" : "px-5"}`}>
-                d
+            <div className={`${isOpen ? "px-2" : "px-2"}`}>
+                <SidebarLinks isOpen={isOpen} linkName='Dashboard' path='/admin' className='flex items-center p-2 py-1 hover:bg-slate-50 rounded mb-1' Icon={Home} />
+                <SidebarLinks isOpen={isOpen} linkName='Products' path='/admin' className='flex items-center p-2 py-1 hover:bg-slate-50 rounded mb-1' Icon={Report} />
+                <SidebarLinks isOpen={isOpen} linkName='Reports' path='/admin' className='flex items-center p-2 py-1 hover:bg-slate-50 rounded mb-1' Icon={Setting} />
+                <SidebarLinks isOpen={isOpen} linkName='Reports' path='/admin' className='flex items-center p-2 py-1 hover:bg-slate-50 rounded mb-1' Icon={Setting} />
             </div>
         </div>
     )
