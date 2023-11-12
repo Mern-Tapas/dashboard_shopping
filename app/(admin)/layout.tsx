@@ -4,6 +4,14 @@ import Sidebar from '@/components/dashboard/Sidebar'
 import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
+import { createContext } from 'react'
+
+export type AdminContextValue = {
+    isOpen: boolean,
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export const AdminContext = createContext<AdminContextValue | undefined>(undefined)
 
 
 function Layout({ children }: { children: React.ReactNode }) {
@@ -13,19 +21,17 @@ function Layout({ children }: { children: React.ReactNode }) {
 
     return (
         <>
-            <ChakraProvider>
-                <div className='flex h-screen overflow-hidden bg-gray-100 dark:bg-black'>
-                    <Sidebar isOpen={isOpen} />
-                    <div className="h-[100vh] w-full overflow-y-scroll">
-                        <Topbar isOpen={isOpen} sidebarButton={setOpen} />
-                        <div className='max-w-screen-lg 2xl:max-w-screen-xl contanier mx-auto px-4 '>
+            <AdminContext.Provider value={{ isOpen, setOpen }}>
 
+                <ChakraProvider>
+                    <div className='flex h-screen overflow-hidden bg-gray-100 dark:bg-black'>
+                        <Sidebar isOpen={isOpen} />
+                        <div className="h-[100vh] w-full overflow-y-scroll">
                             {children}
-
                         </div>
                     </div>
-                </div>
-            </ChakraProvider>
+                </ChakraProvider>
+            </AdminContext.Provider>
         </>
     )
 }
