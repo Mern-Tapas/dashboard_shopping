@@ -31,7 +31,7 @@ function Sidebar({ isOpen }: Props) {
                 <SidebarLinks isOpen={isOpen} linkName='Reports' path='/admin' className='flex items-center p-2 py-1 dark:hover:bg-slate-800 hover:bg-slate-50 rounded mb-1' Icon={Reports} />
             </div>
             <div className={`${isOpen ? "px-2" : "px-2"} mt-auto`}>
-                <SidebarLinks isOpen={isOpen} linkName='Reports' path='/admin' className='flex items-center p-2 py-1 dark:hover:bg-slate-800 hover:bg-slate-50 rounded mb-1' Icon={Reports} />
+                <SidebarLinks isOpen={isOpen} linkName='Reports' path='/admin/settings' className='flex items-center p-2 py-1 dark:hover:bg-slate-800 hover:bg-slate-50 rounded mb-1' Icon={Reports} />
                 <SidebarLinks isOpen={isOpen} linkName='Help' path='/admin' className='flex items-center p-2 py-1 dark:hover:bg-slate-800 hover:bg-slate-50 rounded mb-1' Icon={Setting} />
             </div>
         </div>

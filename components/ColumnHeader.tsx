@@ -14,7 +14,7 @@ function ColumnHeader({ heading, subHeading }: Props) {
                 <p className='mt-1 text-xs dark:text-slate-400 capitalize'>{subHeading}</p>
             </div>
             <div className='my-auto'>
-                <Link href="/view" className='text-xs text-slate-600 dark:text-slate-300 border px-3 py-1 rounded dark:border-slate-600 my-auto'>See All</Link>
+                <Link href="/view" className='text-xs  px-3 py-1 rounded bg-blue-600 text-white my-auto'>See All</Link>
             </div>
         </div>
     )
