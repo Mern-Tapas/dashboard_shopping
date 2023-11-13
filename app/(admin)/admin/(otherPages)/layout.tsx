@@ -2,11 +2,10 @@
 import React from 'react'
 import { useContext } from 'react'
 import { AdminContext, AdminContextValue } from '../../layout'
-import Topbar from '@/components/dashboard/Topbar'
 import AdminHeader from '@/components/AdminHeader'
 
-function layout({ children }: { children: React.ReactNode }) {
-    const { isOpen, setOpen } = useContext<AdminContextValue | any>(AdminContext)
+function Layout({ children }: { children: React.ReactNode }) {
+    const { isOpen, setOpen } = useContext<AdminContextValue>(AdminContext)
 
     return (
         <>
@@ -18,4 +17,4 @@ function layout({ children }: { children: React.ReactNode }) {
     )
 }
 
-export default layout
+export default Layout

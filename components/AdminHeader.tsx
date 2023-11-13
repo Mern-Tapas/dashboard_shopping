@@ -10,7 +10,7 @@ import { Input } from '@chakra-ui/react'
 
 function AdminHeader() {
 
-  const { isOpen, setOpen } = useContext<AdminContextValue | any>(AdminContext)
+  const { isOpen, setOpen } = useContext<AdminContextValue >(AdminContext)
 
   return (
     <div className='w-full sticky top-0'>

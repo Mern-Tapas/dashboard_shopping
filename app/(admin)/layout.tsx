@@ -11,7 +11,11 @@ export interface AdminContextValue {
     setOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export const AdminContext = createContext<AdminContextValue | undefined>(undefined)
+export const AdminContext = createContext<AdminContextValue>({
+    isOpen: false,
+    setOpen: (): void => { }
+
+})
 
 
 function Layout({ children }: { children: React.ReactNode }) {
