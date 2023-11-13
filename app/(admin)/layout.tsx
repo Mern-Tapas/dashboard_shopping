@@ -6,7 +6,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { createContext } from 'react'
 
-export type AdminContextValue = {
+export interface AdminContextValue {
     isOpen: boolean,
     setOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
