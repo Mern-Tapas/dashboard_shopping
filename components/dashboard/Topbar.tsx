@@ -4,11 +4,12 @@ import { Menu, MenuButton, MenuList, MenuItem, MenuGroup, MenuDivider } from '@c
 import Link from 'next/link'
 import ThemeChanger from '../ThemeChanger'
 import SidebarButton from '../SidebarButton'
+import Div from '@/layouts/Div'
 
 
 function Topbar() {
     return (
-        <div className='z-20 component-Topbar h-[60px] bg-white dark:bg-gray-900 dark:text-white w-full sticky top-0 flex justify-between px-4  border-b border-slate-300 dark:border-slate-600 '>
+        <Div className='z-20 component-Topbar h-[60px] w-full sticky top-0 flex justify-between px-4  border-b  '>
 
             <div className="flex items-center">
                 <SidebarButton />
@@ -39,10 +40,7 @@ function Topbar() {
                     </MenuList>
                 </Menu>
             </div>
-
-
-
-        </div>
+        </Div>
     )
 }
 

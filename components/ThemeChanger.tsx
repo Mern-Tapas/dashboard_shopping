@@ -17,8 +17,8 @@ function ThemeChanger() {
     return (
         <>
             <div className=''>
-                <button className='p-3 rounded border ms-2' onClick={() => { setTheme('light') }}>L</button>
-                <button className='p-3 rounded border ms-2' onClick={() => { setTheme('dark') }}>D</button>
+                <button className='p-3 rounded border ms-2 dark:text-white' onClick={() => { setTheme('light') }}>L</button>
+                <button className='p-3 rounded border ms-2 dark:text-white' onClick={() => { setTheme('dark') }}>D</button>
             </div>
         </>
     )
