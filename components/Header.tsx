@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Container from '@/layouts/Container'
 import { usePathname } from 'next/navigation'
 
 
@@ -35,7 +34,7 @@ function Header() {
 
     return (
         <div className={` ${(windowsPosition >= 100) ? "shadow-xl shadow-black/5" : ""} transition h-[65px] bg-white sticky top-0`}>
-            <Container className="h-full max-w-screen-xl m-auto justify-between items-center flex ">
+            <div className="h-full max-w-screen-xl m-auto justify-between items-center flex ">
 
                 <Link href='/' className='logo h-[45px] w-fit '>
                     <Image alt='logo' src="/stock/images/brand/logo.jpg" className=' block md:hidden h-full w-full' height={200} width={200} />
@@ -53,7 +52,7 @@ function Header() {
                     <Link href='/login' className='rounded bg-white text-gray-950 border hover:bg-gray-200 p-2 text-sm px-4 capitalize'><p className='inline-block'>sign up</p></Link>
                 </div>
 
-            </Container>
+            </div>
         </div>
     )
 }

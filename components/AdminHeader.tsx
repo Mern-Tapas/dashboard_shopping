@@ -7,7 +7,7 @@ import Div from '@/components/Div'
 function AdminHeader() {
 
   const links = {
-    
+
   }
 
 
@@ -23,7 +23,7 @@ function AdminHeader() {
             </div>
             <div>
               <div className='relative'>
-                <input type="text" placeholder='Search' className='flex border ps-11 p-2 rounded-md border-slate-300 dark:border-slate-600 bg-white/0 dark:focus:outline-blue-600 focus:outline-blue-500' />
+                <input type="text" placeholder='Search' className='flex text-xs border ps-11 p-2 rounded-md border-slate-300 dark:border-slate-600 bg-white/0 dark:focus:outline-blue-600 focus:outline-blue-500' />
                 <div className=' text-gray-400  absolute left-3 top-[50%] -translate-y-[50%] '>
                   <Search />
                 </div>
