@@ -7,7 +7,7 @@ function Layout({ children }: { children: React.ReactNode }) {
     return (
         <>
             <AdminHeader />
-            <div className='max-w-screen-xl contanier mx-auto px-4'>
+            <div className='max-w-screen-xl contanier mx-auto px-2'>
                 {children}
             </div>
         </>

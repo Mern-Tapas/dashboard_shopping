@@ -14,11 +14,8 @@ function ColumnPagination({ className }: Props) {
                 <p className='text-sm text-slate-500'>Showing <span className='text-slate-900 dark:dark:text-slate-300'>5</span> of <span className='text-slate-900 dark:dark:text-slate-300'>25</span> Results</p>
             </div>
             <div className='my-auto'>
-                <div className='flex justify-between w-[230px]'>
+                <div className='flex justify-between w-[130px]'>
                     <button className='text-xs rounded border border-slate-300 hover:border-blue-600 hover:bg-blue-600 hover:text-white dark:text-slate-300 dark:border-slate-600 inline w-[60px] h-[30px] flex'><LeftArrow className=" m-auto" /></button>
-                    <button className='text-xs rounded border border-slate-300 hover:border-blue-600 hover:bg-blue-600 hover:text-white dark:text-slate-300 dark:border-slate-600 inline w-[30px] h-[30px]'>1</button>
-                    <button className='text-xs rounded border border-slate-300 hover:border-blue-600 hover:bg-blue-600 hover:text-white dark:text-slate-300 dark:border-slate-600 inline w-[30px] h-[30px]'>2</button>
-                    <button className='text-xs rounded border border-slate-300 hover:border-blue-600 hover:bg-blue-600 hover:text-white dark:text-slate-300 dark:border-slate-600 inline w-[30px] h-[30px]'>3</button>
                     <button className='text-xs rounded border border-slate-300 hover:border-blue-600 hover:bg-blue-600 hover:text-white dark:text-slate-300 dark:border-slate-600 inline w-[60px] h-[30px] flex'><RightArrow className=" m-auto" /></button>
                 </div>
             </div>

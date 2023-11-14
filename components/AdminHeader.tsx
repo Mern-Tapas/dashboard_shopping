@@ -35,11 +35,11 @@ function AdminHeader() {
         </div>
       </Div>
       <Div className='z-20 component-Topbar dark:text-white  border-b '>
-        <div className='h-[50px] max-w-screen-xl contanier mx-auto px-4'>
+        <div className='h-[38px] max-w-screen-xl contanier mx-auto px-4'>
           <div className='flex h-full items-center'>
             <Link className='me-3 text-xs relative h-full flex items-center px-2' href={'/admin/product/add'}>
               Products
-              <span className='w-full bg-blue-600 h-[5px] absolute bottom-0 left-0'></span>
+              <span className='w-full bg-blue-600 h-[4px] absolute bottom-0 left-0 rounded-t-lg'></span>
             </Link>
             <Link className='me-3 text-xs relative h-full flex items-center px-2' href={'/admin/product/add'}>
               Categories
