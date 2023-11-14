@@ -7,7 +7,7 @@ import Logout from '@/public/stock/icons/logout-1.svg'
 import Box24 from '@/public/stock/icons/box24.svg'
 import People from '@/public/stock/icons/people.svg'
 import Profile from '@/public/stock/icons/profile.svg'
-import Div from '@/layouts/Div'
+import Div from '@/components/Div'
 
 interface Props {
     isOpen: boolean

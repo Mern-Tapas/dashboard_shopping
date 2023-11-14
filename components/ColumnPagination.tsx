@@ -1,7 +1,7 @@
 import React from 'react'
 import LeftArrow from '@/public/stock/icons/arrow-left.svg'
 import RightArrow from '@/public/stock/icons/arrow-right-1.svg'
-import Div from '@/layouts/Div'
+import Div from '@/components/Div'
 
 export type Props = {
     className: string,

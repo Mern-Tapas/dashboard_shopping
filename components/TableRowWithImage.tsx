@@ -9,7 +9,7 @@ function TableRowWithImage() {
             </td>
             <td className='py-3'>
                 <h3 className='text-sm font-medium text-slate-900 dark:text-slate-200'>I Phone 15 Pro</h3>
-                <p className='text-xs'>Product Name</p>
+                <p className='text-xs mt-1'>Product Name</p>
             </td>
             <td className='py-3'>
                 <h3 className='text-sm'>$ 1200</h3>

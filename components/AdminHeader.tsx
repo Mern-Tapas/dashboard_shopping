@@ -2,9 +2,13 @@ import React, { useContext } from 'react'
 import SidebarButton from './SidebarButton'
 import Search from '@/public/stock/icons/search.svg'
 import Link from 'next/link'
-import Div from '@/layouts/Div'
+import Div from '@/components/Div'
 
 function AdminHeader() {
+
+  const links = {
+    
+  }
 
 
   return (

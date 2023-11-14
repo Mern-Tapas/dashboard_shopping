@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import ColumnFooter from './ColumnPagination'
 import ColumnHeader from './ColumnHeader'
-import Div from '@/layouts/Div'
+import Div from '@/components/Div'
 
 export type ColumnsItem = {
     children: React.ReactNode,
