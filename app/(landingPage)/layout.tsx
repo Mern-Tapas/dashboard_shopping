@@ -1,5 +1,4 @@
 import React from 'react'
-import Container from '@/layouts/Container'
 import Image from 'next/image'
 import Header from '@/components/Header'
 import { ChakraProvider } from '@chakra-ui/react'
