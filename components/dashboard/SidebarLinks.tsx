@@ -14,7 +14,7 @@ function SidebarLinks({ Icon, linkName, path, className, isOpen, iconClass }: Pr
     return (
         <>
             <Link href={path} className={`${className} relative  transition transition-all ease-in-out group/item`}>
-                <div className={`${iconClass} icon text-slate-500 xl:h-[30px] xl:w-[30px]  flex justify-center items-center  rounded dark:text-slate-300`}>
+                <div className={`${iconClass} icon  text-slate-500 h-[30px] w-[30px]  flex justify-center items-center  rounded dark:text-slate-300`}>
                     <Icon />
                 </div>
                 <div className={` transition-all ease-in-out ${isOpen ? "block xl:hidden " : "hidden pointer-events-none xl:block"} dark:text-slate-300  ms-2 text-sm`}>
