@@ -2,9 +2,9 @@ import React from 'react'
 
 function TableRowWithImage() {
     return (
-        <tr className='border-b border-slate-300 dark:border-slate-600'>
+        <tr className='border-b border-slate-300 dark:border-slate-800'>
             <td className='py-3 ps-3'>
-                <div className="box h-[40px] w-[40px] border border-slate-300 dark:border-slate-400 bg-gray-200 dark:bg-gray-600 border rounded">
+                <div className="box h-[40px] w-[40px] border border-slate-300 dark:border-slate-400 bg-gray-200 dark:bg-slate-900 border rounded-md">
                 </div>
             </td>
             <td className='py-3'>
