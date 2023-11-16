@@ -24,17 +24,17 @@ function AdminHeader() {
       }
     })
 
-  }, [])
+  }, [pathname])
 
   return (
     <div className='w-full sticky top-0'>
       <Div className='z-20 component-Topbar dark:text-white  border-b'>
-        <div className='h-[60px] flex flex-col p-2 max-w-screen-xl contanier mx-auto px-4'>
+        <div className='h-[60px] flex flex-col p-2 max-w-screen-xl contanier mx-auto'>
 
-          <div className='mt-auto flex justify-between'>
+          <div className='my-auto flex justify-between'>
             <div className='flex items-center'>
               <SidebarButton />
-              <h1 className='ms-2 text-2xl font-bold '>Settings </h1>
+              <h1 className='ms-2 text-2xl font-bold capitalize'>{pathname?.split('/')[2]}</h1>
             </div>
             <div>
               <div className='relative'>
@@ -44,7 +44,7 @@ function AdminHeader() {
                 </div>
               </div>
             </div>
-            </div>
+          </div>
         </div>
       </Div>
       <Div className='z-20 component-Topbar dark:text-white  border-b '>
@@ -52,9 +52,11 @@ function AdminHeader() {
           <div className='flex h-full items-center'>
 
             {thisPageLinks.map((link) => {
-              return <Link className='me-3 text-xs relative h-full flex items-center px-2' href={link.path}>
+              return <Link className={`me-3 text-xs relative h-full capitalize flex items-center px-2 ${(pathname == link.path) ? "text-blue-600" : ""}`} href={link.path}>
                 {link.linkName}
-                <span className='w-full bg-blue-600 h-[4px] absolute bottom-0 left-0 rounded-t-lg'></span>
+                {(link.path == pathname) ?
+                  <span className='w-full bg-blue-600 h-[4px] absolute bottom-0 left-0 rounded-t-lg'></span>
+                  : ""}
               </Link>
             })}
           </div>

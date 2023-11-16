@@ -14,7 +14,7 @@ const links = [
             {
                 linkName: "n",
                 path: "d",
-                
+
             }
         ]
     },
@@ -26,7 +26,7 @@ const links = [
             {
                 linkName: "n",
                 path: "d",
-                
+
             }
         ]
     },
@@ -38,7 +38,7 @@ const links = [
             {
                 linkName: "n",
                 path: "d",
-                
+
             }
         ]
     },
@@ -48,9 +48,9 @@ const links = [
         Icon: Profile,
         subLinks: [
             {
-                linkName: "n",
+                linkName: "general",
                 path: "d",
-                
+
             }
         ]
     },
@@ -62,7 +62,7 @@ const links = [
             {
                 linkName: "n",
                 path: "d",
-                
+
             }
         ]
     },
@@ -72,9 +72,14 @@ const links = [
         Icon: Setting,
         subLinks: [
             {
-                linkName: "n",
-                path: "d",
-                
+                linkName: "General",
+                path: "/admin/settings",
+
+            },
+            {
+                linkName: "preference",
+                path: "/admin/settings/preference",
+
             }
         ]
     },
