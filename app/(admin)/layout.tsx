@@ -1,19 +1,37 @@
 'use client'
-import Topbar from '@/components/dashboard/Topbar'
 import Sidebar from '@/components/dashboard/Sidebar'
 import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { createContext } from 'react'
+import links from '@/DemoData/links'
+import { FC, SVGProps } from 'react'
+import Settings from '@/public/stock/icons/setting.svg'
+
+
+
+export interface Sublink {
+    linkName: string,
+    path: string
+}
+
+export interface Link {
+    linkName: string,
+    path: string,
+    Icon: FC<SVGProps<SVGElement>>,
+    subLinks: Sublink[]
+}
 
 export interface AdminContextValue {
     isOpen: boolean,
     setOpen: React.Dispatch<React.SetStateAction<boolean>>
+    links: Link[]
 }
 
 export const AdminContext = createContext<AdminContextValue>({
     isOpen: false,
-    setOpen: (): void => { }
+    setOpen: (): void => { },
+    links: [{ linkName: "linkname", path: "path", Icon: Settings, subLinks: [{ linkName: "linkname", path: "path" }] }]
 
 })
 
@@ -25,11 +43,11 @@ function Layout({ children }: { children: React.ReactNode }) {
 
     return (
         <>
-            <AdminContext.Provider value={{ isOpen, setOpen }}>
+            <AdminContext.Provider value={{ isOpen, setOpen, links }}>
 
                 <ChakraProvider>
                     <div className='flex h-screen overflow-hidden bg-blue-50/30 dark:bg-gray-950'>
-                        <Sidebar isOpen={isOpen} />
+                        <Sidebar />
                         <div className="h-[100vh] w-full overflow-y-scroll">
                             {children}
                         </div>
