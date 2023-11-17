@@ -1,4 +1,4 @@
-import Home from "@/public/stock/icons/home.svg"
+import Home from "@/public/stock/icons/element-4.svg"
 import Reports from '@/public/stock/icons/Report.svg'
 import Box24 from '@/public/stock/icons/box24.svg'
 import People from '@/public/stock/icons/people.svg'
@@ -36,10 +36,13 @@ const links = [
         Icon: Box24,
         subLinks: [
             {
-                linkName: "n",
-                path: "d",
-
-            }
+                linkName: "Products",
+                path: "/admin/products",
+            },
+            {
+                linkName: "Products",
+                path: "/admin/",
+            },
         ]
     },
     {
@@ -50,8 +53,8 @@ const links = [
             {
                 linkName: "general",
                 path: "d",
+            },
 
-            }
         ]
     },
     {
@@ -80,7 +83,12 @@ const links = [
                 linkName: "preference",
                 path: "/admin/settings/preference",
 
-            }
+            },
+            {
+                linkName: "Theme",
+                path: "/admin/settings/theme",
+
+            },
         ]
     },
 ]

@@ -46,7 +46,7 @@ function Layout({ children }: { children: React.ReactNode }) {
             <AdminContext.Provider value={{ isOpen, setOpen, links }}>
 
                 <ChakraProvider>
-                    <div className='flex h-screen overflow-hidden bg-blue-50/30 dark:bg-gray-950'>
+                    <div className='flex h-screen overflow-hidden bg-[#f3f4f6] dark:bg-gray-950'>
                         <Sidebar />
                         <div className="h-[100vh] w-full overflow-y-scroll">
                             {children}

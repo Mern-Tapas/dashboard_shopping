@@ -25,12 +25,9 @@ function Sidebar() {
             </div>
             <div className={`mt-5 ${isOpen ? "px-2" : "px-2"}`}>
                 {links.map((link, index) => {
-                    return <SidebarLinks key={index} isOpen={isOpen} linkName={link.linkName} path={link.path} className={` ${(pathname?.split("/")[2] == link.path.split("/")[2]) ? "bg-blue-600 hover:bg-blue-700 text-white" : "dark:hover:bg-slate-800 hover:bg-slate-50 dark:text-slate-300"} flex items-center p-2 py-1 rounded mb-1`} Icon={link.Icon} />
+                    return <SidebarLinks key={index} isOpen={isOpen} linkName={link.linkName} path={link.path} className={` ${(pathname?.split("/")[2] == link.path.split("/")[2]) ? "bg-blue-600 hover:bg-blue-700 text-white" : "dark:hover:bg-slate-800 hover:bg-slate-200 dark:text-slate-300"} flex items-center p-2 py-1 rounded mb-1`} Icon={link.Icon} />
 
                 })}
-            </div>
-            <div className={`${isOpen ? "px-2" : "px-2"} mt-auto`}>
-                <SidebarLinks iconClass='text-white' isOpen={isOpen}  linkName='Logout' path='/admin' className='flex items-center p-2 py-1 bg-red-600 text-white rounded mb-1' Icon={Logout} />
             </div>
         </Div>
 

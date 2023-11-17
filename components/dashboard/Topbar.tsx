@@ -1,6 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
-import ThemeChanger from '../ThemeChanger'
 import SidebarButton from '../SidebarButton'
 import Div from '@/components/Div'
 
@@ -11,7 +9,7 @@ function Topbar() {
             <div className='max-w-screen-xl flex justify-between h-full px-2 mx-auto my-auto'>
                 <div className='flex items-center'>
                     <SidebarButton />
-                    <h1 className='ms-2 text-2xl font-bold capitalize'>Dashboard</h1>
+                    <h1 className='ms-2 text-2xl font-bold capitalize dark:text-white'>Dashboard</h1>
                 </div>
               
                 <div className="flex items-center dark:text-white">
