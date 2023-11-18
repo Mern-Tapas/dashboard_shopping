@@ -1,7 +1,6 @@
 'use client'
-import React, { useContext } from 'react'
+import React from 'react'
 import MenuSvg from '@/public/stock/icons/menu-1.svg'
-import { AdminContext, AdminContextValue } from '@/app/(admin)/layout'
 import Close from '@/public/stock/icons/close.svg'
 
 

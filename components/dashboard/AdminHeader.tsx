@@ -8,7 +8,7 @@ import { AdminContext, Sublink } from '@/app/(admin)/layout'
 import { usePathname } from 'next/navigation'
 import ThemeChanger from './ThemeChanger'
 import { AdminContextValue } from '@/app/(admin)/layout'
-
+import MobileSidebarButton from './MobileSidebarButton'
 function AdminHeader() {
 
   const { isMobileSidebar, isOpen, setOpen, setMobileSidebar } = useContext<AdminContextValue>(AdminContext)
@@ -40,7 +40,7 @@ function AdminHeader() {
             <div className='my-auto flex justify-between'>
               <div className='flex items-center'>
                 <SidebarButton value={isOpen} buttonAction={setOpen} className="hidden lg:block" />
-                <SidebarButton value={isMobileSidebar} buttonAction={setMobileSidebar} className="block lg:hidden" />
+                <MobileSidebarButton value={isMobileSidebar} buttonAction={setMobileSidebar} className='block lg:hidden' />
                 <h1 className='ms-2 text-2xl font-bold capitalize'>{pageName}</h1>
               </div>
               <div>
