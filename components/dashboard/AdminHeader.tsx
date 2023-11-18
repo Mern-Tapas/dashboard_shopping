@@ -3,9 +3,10 @@ import React, { useContext, useEffect, useState } from 'react'
 import SidebarButton from './SidebarButton'
 import Search from '@/public/stock/icons/search.svg'
 import Link from 'next/link'
-import Div from '@/components/Div'
+import Div from '@/components/dashboard/Div'
 import { AdminContext, Sublink } from '@/app/(admin)/layout'
 import { usePathname } from 'next/navigation'
+import ThemeChanger from './ThemeChanger'
 
 function AdminHeader() {
 
@@ -35,7 +36,8 @@ function AdminHeader() {
           <div className='h-[60px] flex flex-col p-2 max-w-screen-xl contanier mx-auto'>
             <div className='my-auto flex justify-between'>
               <div className='flex items-center'>
-                <SidebarButton />
+                <SidebarButton className="hidden lg:block" />
+                <SidebarButton className="block lg:hidden" />
                 <h1 className='ms-2 text-2xl font-bold capitalize'>{pageName}</h1>
               </div>
               <div>
@@ -63,6 +65,7 @@ function AdminHeader() {
                   }
                 </Link>
               })}
+              <ThemeChanger />
 
             </div>
           </div>

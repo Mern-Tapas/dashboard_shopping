@@ -2,9 +2,9 @@
 import React from 'react'
 import Count from '@/components/dashboard/Count'
 import GridLayout from '@/components/dashboard/GridLayout'
-import ColumnsH from '@/components/ColumnsH'
-import TableRowWithImage from '@/components/TableRowWithImage'
-import ColumnPagination from '@/components/ColumnPagination'
+import ColumnsH from '@/components/dashboard/ColumnsH'
+import TableRowWithImage from '@/components/dashboard/TableRowWithImage'
+import ColumnPagination from '@/components/dashboard/ColumnPagination'
 function Page() {
   return (
     <>

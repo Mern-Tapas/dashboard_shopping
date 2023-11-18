@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import AdminHeader from '@/components/AdminHeader'
+import AdminHeader from '@/components/dashboard/AdminHeader'
 
 function Layout({ children }: { children: React.ReactNode }) {
 

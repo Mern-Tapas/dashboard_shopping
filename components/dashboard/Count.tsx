@@ -1,6 +1,6 @@
 import React from 'react'
 import Box from '@/public/stock/icons/box.svg'
-import Div from '@/components/Div'
+import Div from '@/components/dashboard/Div'
 
 
 function Count() {

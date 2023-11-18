@@ -34,7 +34,7 @@ function Header() {
 
     return (
         <div className={` ${(windowsPosition >= 100) ? "shadow-xl shadow-black/5" : ""} transition h-[65px] bg-white sticky top-0`}>
-            <div className="h-full max-w-screen-xl m-auto justify-between items-center flex ">
+            <div className="h-full max-w-screen-xl m-auto justify-between items-center flex px-2">
 
                 <Link href='/' className='logo h-[45px] w-fit '>
                     <Image alt='logo' src="/stock/images/brand/logo.jpg" className=' block md:hidden h-full w-full' height={200} width={200} />
@@ -43,7 +43,7 @@ function Header() {
 
                 <div className='links-section hidden md:block'>
                     {links.map((link, index) => {
-                        return <Link key={index} className={`${(link.path == pathname) ? "bg-gray-100" : ""} capitalize hover:bg-gray-100 rounded text-sm me-3 p-2 px-3`} href={link.path}> <h6 className='inline-block'>{link.link}</h6> </Link>
+                        return <Link key={index} className={`${(link.path == pathname) ? "bg-gray-100" : ""} capitalize hover:bg-gray-100 rounded text-xs me-3 p-2 px-3`} href={link.path}> <h6 className='inline-block'>{link.link}</h6> </Link>
                     })}
                 </div>
 

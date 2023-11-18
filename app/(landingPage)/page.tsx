@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageBox from '@/components/ImageBox'
+import ImageBox from '@/components/dashboard/ImageBox'
 
 function page() {
     return (

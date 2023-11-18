@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Div from '@/components/Div'
+import Div from '@/components/dashboard/Div'
 
 type Props = {
     heading: string
