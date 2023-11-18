@@ -8,7 +8,7 @@ function MobileSidebar({ className }: { className: string }) {
     const { isMobileSidebar,setMobileSidebar } = useContext<AdminContextValue>(AdminContext)
 
     return (
-        <Div className={`${className} ${isMobileSidebar ? "" : "-left-[100%]"} transition p-2 absolute z-30 shadow-[35px_0px_60px_-15px_rgba(0,0,0,0.1)] h-full w-[198px]`}>
+        <Div className={`${className} ${isMobileSidebar ? "" : "-left-[100%]"} block lg:hidden transition p-2 absolute z-30 shadow-[35px_0px_60px_-15px_rgba(0,0,0,0.1)] h-full w-[230px]`}>
             <SidebarButton value={isMobileSidebar} buttonAction={setMobileSidebar} className="block lg:hidden" />
 
         </Div>
