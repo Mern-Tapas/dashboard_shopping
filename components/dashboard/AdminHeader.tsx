@@ -7,8 +7,11 @@ import Div from '@/components/dashboard/Div'
 import { AdminContext, Sublink } from '@/app/(admin)/layout'
 import { usePathname } from 'next/navigation'
 import ThemeChanger from './ThemeChanger'
+import { AdminContextValue } from '@/app/(admin)/layout'
 
 function AdminHeader() {
+
+  const { isMobileSidebar, isOpen, setOpen, setMobileSidebar } = useContext<AdminContextValue>(AdminContext)
 
   const { links } = useContext(AdminContext)
   const pathname = usePathname()
@@ -36,8 +39,8 @@ function AdminHeader() {
           <div className='h-[60px] flex flex-col p-2 max-w-screen-xl contanier mx-auto'>
             <div className='my-auto flex justify-between'>
               <div className='flex items-center'>
-                <SidebarButton className="hidden lg:block" />
-                <SidebarButton className="block lg:hidden" />
+                <SidebarButton value={isOpen} buttonAction={setOpen} className="hidden lg:block" />
+                <SidebarButton value={isMobileSidebar} buttonAction={setMobileSidebar} className="block lg:hidden" />
                 <h1 className='ms-2 text-2xl font-bold capitalize'>{pageName}</h1>
               </div>
               <div>
