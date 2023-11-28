@@ -35,7 +35,7 @@ function AdminHeader() {
   return (
     <>
       <div className='w-full sticky top-0'>
-        <Div className='z-20 component-Topbar dark:text-white  border-b'>
+        <Div className='z-20 component-Topbar dark:text-white'>
           <div className='h-[60px] flex flex-col p-2 max-w-screen-xl contanier mx-auto'>
             <div className='my-auto flex justify-between'>
               <div className='flex items-center'>
@@ -56,7 +56,7 @@ function AdminHeader() {
         </Div>
       </div>
       <div className='w-full sticky top-[60px]'>
-        <Div className='z-20 component-Topbar dark:text-white  border-b '>
+        <Div className='z-20 component-Topbar dark:text-white'>
           <div className='h-[38px] max-w-screen-xl contanier mx-auto px-4'>
             <div className='flex h-full items-center'>
               {sublinks.map((links, index) => {

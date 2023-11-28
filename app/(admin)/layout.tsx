@@ -2,12 +2,11 @@
 import Sidebar from '@/components/dashboard/Sidebar'
 import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import { createContext } from 'react'
 import links from '@/DemoData/links'
 import { FC, SVGProps } from 'react'
 import Settings from '@/public/stock/icons/setting.svg'
-import MobileSidebar from '@/components/dashboard/MobileSidebar'
 
 
 
@@ -55,7 +54,6 @@ function Layout({ children }: { children: React.ReactNode }) {
                 <ChakraProvider>
                     <div className='flex h-screen overflow-hidden bg-[#f3f4f6] dark:bg-gray-950'>
                         <Sidebar />
-                        <MobileSidebar className={''} />
                         <div className="h-[100vh] w-full overflow-y-scroll">
                             {children}
                         </div>

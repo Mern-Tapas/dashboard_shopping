@@ -49,7 +49,7 @@ function Header() {
 
                 <div className=' buttons'>
                     <Link href='/login' className='rounded bg-gray-950 text-white hover:bg-gray-700 p-2 text-sm px-4 me-2 capitalize'><p className='inline-block'>log in</p></Link>
-                    <Link href='/login' className='rounded bg-white text-gray-950 border hover:bg-gray-200 p-2 text-sm px-4 capitalize'><p className='inline-block'>sign up</p></Link>
+                    <Link href='/login' className='rounded bg-white text-gray-950 border hover:bg-gray-200 p-2 text-sm px-4 capitalize'><p className='inline-block'>sign up</p></Link>  
                 </div>
 
             </div>
